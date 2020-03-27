@@ -1,0 +1,48 @@
+<html>
+    <meta charset="UTF-8">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>SLIC_3</title>
+    </head>
+
+    <body>
+    <center>
+
+        <div id="header">
+            <h1 id="title">SWIC_3</h1>
+            <h3 id="subtitle">Simple WASM Implementation of Crypto</h3>
+        </div><br>
+
+        <div>
+            <br>
+
+            <b>Message</b><br>
+            <textarea id="message_io" rows="16"></textarea><br><br>
+
+            <b>Password</b><br>
+            <input id="pass_input" type="password"><br><br>
+       
+        </div><br>
+
+        <div>
+
+            <button id="enc_button">Encrypt</button>
+            <button id="dec_button">Decrypt</button>
+
+        </div><br>
+        <p id="ver">Loading...</p>
+        <a id="sig" href="http://github.com/mbednarek360/SWIC_3">Made by Michael Bednarek</p>
+    </center>
+
+    <!--load wasm module-->
+    <script type="module">
+        document.getElementById("message_io").value = "";
+        import init, { setup } from './pkg/SWIC_3.js';
+        async function run() {
+            await init();
+            await setup();
+        }
+        run();
+    </script>
+    </body>
+</html>

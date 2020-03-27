@@ -1,0 +1,99 @@
+:root {
+    --nord0: #2e3440;
+    --nord1: #3b4252;
+    --nord2: #434c5e;
+    --nord3: #4c566a;
+    --nord4: #d8dee9;
+    --nord5: #e5e9f0;
+    --nord6: #eceff4;
+    --nord7: #8fbcbb;
+    --nord8: #88c0d0;
+    --nord9: #81a1c1;
+    --nord10: #5e81ac;
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+
+    --error: var(--nord11);
+    --info: var(--nord14);
+}
+
+body {
+    font-size: 14px;
+    padding-top: 7%;
+    font-family: sans-serif;
+    background-color: var(--nord0);
+    color: var(--nord5);
+}
+
+div {
+    background-color: var(--nord1);
+    border: 2px solid var(--nord3);
+    width: 35%;
+    padding: 16px;
+}
+
+b {
+    color: var(--nord5);
+}
+
+textarea, input[type="password"], select {
+    color: var(--nord6);
+    background-color: var(--nord2);
+    width: 75%;
+    line-height: 18px;
+    border: 2px solid var(--nord0);
+    padding: 6px;
+    margin-top: 5px;
+}
+
+button {
+    font-size: 14px;
+    color: var(--nord6);
+    cursor: pointer;
+    background-color: var(--nord2);
+    border: 2px solid var(--nord0);
+    padding: 8px;
+    width: 37.5%;
+    line-height: 18px;
+    min-width: 125px;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+button:hover {
+    background-color: var(--nord3);
+}
+
+#title {
+    color: var(--nord6);
+}
+
+#subtitle {
+    color: var(--nord9);
+}
+
+#ver {
+    color: var(--nord3);
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 15;
+}
+
+#sig {
+    color: var(--nord3);
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    right: 15;
+}
+
+#sig:hover {
+    color: var(--nord9);
+    cursor: pointer;
+}
